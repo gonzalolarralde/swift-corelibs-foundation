@@ -65,6 +65,7 @@ open class Host: NSObject {
     }
     
     internal func _resolveCurrent() {
+    /*
         var ifaddr: UnsafeMutablePointer<ifaddrs>? = nil
         if getifaddrs(&ifaddr) != 0 {
             return
@@ -88,9 +89,11 @@ open class Host: NSObject {
             }
             ifa = ifaValue.ifa_next
         }
+    */
     }
     
     internal func _resolve() {
+    /*
         if _resolved {
             return
         }
@@ -148,7 +151,7 @@ open class Host: NSObject {
                 res = info.ai_next
             }
         }
-        
+    */
     }
     
     open var name: String? {
